@@ -1,0 +1,85 @@
+input{
+    display: block;
+    width: 40%;
+    font-weight: 400;
+    color: #495057;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    outline: #1ea7fd;
+}
+
+input:focus{
+    border: 1px solid #1ea7fd;
+}
+
+.products{
+    margin-top: 20px;
+}
+
+.card{
+    border: 1px solid #c3c8cc;
+    border-radius: 5px;
+    /* border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; */
+}
+
+.imagen img{
+    object-fit: cover;
+    width: -webkit-fill-available;
+}
+
+/* uso de css grid */
+/* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+.products{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+}
+
+.card-body{
+    padding: 5px;
+}
+
+.title{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: #494a4a;
+}
+
+.category{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: #535556;
+    text-align: center;
+
+}
+.category span{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #1d96d2;
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: #535556;
+}
+
+.empty{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
